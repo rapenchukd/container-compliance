@@ -91,7 +91,7 @@ function cve_definitions_uri(){
 			query_cpe_in_chroot $image_root oval:org.open-scap.cpe.rhel:def:5; then
 		echo "http://www.redhat.com/security/data/oval/com.redhat.rhsa-all.xml"
 	else
-		echo "Could not found CVE definitions for: $name" >&2
+		echo "Could not find CVE definitions for: $name" >&2
 		return 1
 	fi
 }
